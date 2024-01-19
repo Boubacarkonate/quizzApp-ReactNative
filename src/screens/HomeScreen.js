@@ -1,12 +1,12 @@
 // Importation des modules nécessaires
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, ImageBackground } from 'react-native';
+import LinearGradient from 'react-native-linear-gradient';
 import { FontAwesome } from '@expo/vector-icons';  // Importation de la bibliothèque d'icônes
 
 // Définition du composant HomeScreen
 const HomeScreen = ({ navigation }) => {
   return (
-    // Conteneur principal
     <View style={styles.container}>
       {/* Titre de l'écran d'accueil */}
       <Text style={styles.title}>Bienvenue au Quiz de Culture Pop 🎉</Text>
@@ -37,6 +37,7 @@ const HomeScreen = ({ navigation }) => {
         </View>
       </TouchableOpacity>
     </View>
+
   );
 };
 
@@ -73,6 +74,11 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 18,
     marginLeft: 10,  // Espacement entre l'icône et le texte
+  },
+  backgroundImage: {
+    flex: 1,
+    resizeMode: 'stretch', // ou 'stretch' pour étirer l'image pour remplir l'écran
+    justifyContent: 'center', // Alignement vertical
   },
 });
 
