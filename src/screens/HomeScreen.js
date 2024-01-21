@@ -1,7 +1,6 @@
 // Importation des modules nécessaires
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, ImageBackground } from 'react-native';
-import LinearGradient from 'react-native-linear-gradient';
+import { View, Text, StyleSheet, TouchableOpacity, } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';  // Importation de la bibliothèque d'icônes
 
 // Définition du composant HomeScreen
@@ -47,11 +46,13 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: '#3498db',
   },
   title: {
     fontSize: 34,
     marginBottom: 80,
     textAlign: 'center',
+    color: '#333', // Couleur du texte
   },
   startButton: {
     flexDirection: 'row',  // Pour aligner l'icône et le texte côte à côte
